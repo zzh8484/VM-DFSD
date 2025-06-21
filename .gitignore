@@ -1,0 +1,10 @@
+.history/
+__pycache__/
+*.pth
+US30K/
+isic2018/
+isic2017/
+Synapse/
+results/
+results1/
+ev/

@@ -1,0 +1,11 @@
+
+python isic_load.py --pth 'pth/isic18.pth' --dataset  'isic2018'
+python isic_load.py --pth 'pth/isic17.pth' --dataset  'isic2017'
+python cam_load.py --pth 'pth/cam.pth'
+python other_load.py --pth 'pth/ddti.pth' --dataset 'ThyroidNodule-DDTI'
+python other_load.py --pth 'pth/tg3k.pth' --dataset 'ThyroidNodule-TG3K'
+python other_load.py --pth 'pth/tn3k.pth' --dataset 'ThyroidNodule-TN3K'
+python other_load.py --pth 'pth/hmcqu.pth' --dataset 'Echocardiography-HMCQU'
+python other_load.py --pth 'pth/busi.pth' --dataset 'Breast-BUSI'
+python other_load.py --pth 'pth/udiat.pth' --dataset 'Breast-UDIAT'
+python syn_load.py --pth 'pth/syn.pth'
