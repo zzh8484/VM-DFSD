@@ -2,7 +2,7 @@
 
 This repository is the official implementation of VMDFSD :VMmaba-DFSD: Dual-domain Frequency-Spatial  Decoder for Medical image segmentation
 
-![VMDFSD](stastic/net.png)
+![VMDFSD](stastic/DFSD.png)
 
 
 
@@ -47,7 +47,7 @@ Please download them and place them in the `./pre/` folder.
 |-----------------|--------------------------------------------------------------------------------------------|
 | **GitHub**      | [Releases](https://github.com/MzeroMiko/VMamba/releases)                                   |
 | **Google Drive**| [Download](https://drive.google.com/file/d/1AJ65V7U49u8RJekxbpeSUmI6xqkyvsLb/view?usp=drive_link) |
-| **Baidu Netdisk** | [Link](https://pan.baidu.com/s/1MQEcSFNne-UNdiaHTOI2rw) (Password: z123)                  |
+| **Baidu Netdisk** | [Download](https://pan.baidu.com/s/1MQEcSFNne-UNdiaHTOI2rw) (Password: z123)                  |
 
 ### 2. Dataset-specific Weights
 These are the **model weights trained on specific datasets**.  
@@ -56,7 +56,7 @@ Please download them and place them in the `./pth/` folder.
 | Resource          | Link                                                                                       |
 |-------------------|--------------------------------------------------------------------------------------------|
 | **Google Drive**  | [Download](https://drive.google.com/drive/folders/1-oyT-8XoxN9G3na4p-jP_HfXXTnbmtph?usp=sharing) |
-| **Baidu Netdisk** | [Link](https://pan.baidu.com/s/1MQEcSFNne-UNdiaHTOI2rw) (Password: z123)                  |
+| **Baidu Netdisk** | [Download](https://pan.baidu.com/s/1MQEcSFNne-UNdiaHTOI2rw) (Password: z123)                  |
 
 ## Evaluate the Model
 
@@ -69,3 +69,13 @@ After preparing the datasets and pretrained weights, run the evaluation:
 ```
 python  syn_mytrain.py --name "base" 
 ```
+## Acknowledgments
+
+We thank the authors of the following repositories for their valuable contributions:
+
+- [VMamba](https://github.com/MzeroMiko/VMamba)
+- [VM-UNet](https://github.com/JCruan519/VM-UNet) 
+- [TransUNet](https://github.com/Beckschen/TransUNet) 
+- [WTConv](https://github.com/BGU-CS-VIL/WTConv) 
+- [EMCAD](https://github.com/SLDGroup/EMCAD) 
+- [DAC-Net](https://github.com/Phil-y/DAC-Net) 
