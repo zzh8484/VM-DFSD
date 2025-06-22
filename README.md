@@ -71,7 +71,7 @@ python  syn_mytrain.py --name "base"
 ```
 ## Acknowledgments
 
-We thank the authors of the following repositories for their valuable contributions:
+We thank the authors of the following open-source projects for their inspiring code :
 
 - [VMamba](https://github.com/MzeroMiko/VMamba)
 - [VM-UNet](https://github.com/JCruan519/VM-UNet) 
