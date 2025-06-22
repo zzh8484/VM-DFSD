@@ -76,6 +76,7 @@ We thank the authors of the following repositories for their valuable contributi
 - [VMamba](https://github.com/MzeroMiko/VMamba)
 - [VM-UNet](https://github.com/JCruan519/VM-UNet) 
 - [TransUNet](https://github.com/Beckschen/TransUNet) 
+- [CCViM](https://github.com/zymissy/CCViM)
 - [WTConv](https://github.com/BGU-CS-VIL/WTConv) 
 - [EMCAD](https://github.com/SLDGroup/EMCAD) 
 - [DAC-Net](https://github.com/Phil-y/DAC-Net) 
