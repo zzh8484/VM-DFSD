@@ -7,7 +7,6 @@ datasets=(
     "Breast-UDIAT"
 )
 
-export CUDA_VISIBLE_DEVICES="3"  
 
 for dataset in "${datasets[@]}"
 do

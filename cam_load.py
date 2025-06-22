@@ -7,7 +7,7 @@ if __name__ == '__main__':
     parser.add_argument('--pth', default='/root/haiguang/zzh/dfsd/pth/cam.pth',type=str)
     args = parser.parse_args()
     from build_model import build_model
-    model=build_model(model='base',num_classes=9,scan_mode=3,k_group=8)
+    model=build_model(model='base',num_classes=4,scan_mode=3,k_group=8)
 
     testloader = prepare_dataloader_val()
     model.eval()

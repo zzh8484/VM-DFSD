@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export CUDA_VISIBLE_DEVICES="1"  
 python syn_mytrain.py --name "our_base_1-82" --scan 3 --group 8  --epoch 300
 # python syn_mytrain.py --name "our_base_1-12" --scan 5 --group 12 --epoch 300
 # python syn_mytrain.py --name "our_base_9-12" --scan 4 --group 4 --epoch 300
