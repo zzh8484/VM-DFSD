@@ -62,7 +62,7 @@ class VMDFSD(nn.Module):
                      ('decoder: ', sum([m.numel() for m in self.decoder.parameters()])/1e6))
 
         
-    def forward(self, x, mode='test'):
+    def forward(self, x):
         
         if x.size()[1] == 1:
             x = self.conv(x)
