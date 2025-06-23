@@ -13,8 +13,8 @@ conda create -n vmdfsd python=3.10
 conda activate vmdfsd
 pip install torch==1.13.0 torchvision==0.14.0 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install timm==0.4.12 fvcore PyWavelets triton==2.1.0 thop scikit-learn  thop h5py SimpleITK scikit-image medpy yacs numpy==1.26.4
-pip install causal_conv1d-1.0.0+cu118torch2.2cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
-pip install mamba_ssm-1.0.1+cu118torch2.2cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+pip install causal_conv1d-1.0.0+cu118torch1.13cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+pip install mamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
 cd kernels/selective_scan
 pip install .
 ```
