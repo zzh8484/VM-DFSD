@@ -54,7 +54,7 @@ class VMDFSD(nn.Module):
             channels=[768, 384, 192, 96]
 
         else:
-            print('Encoder not implemented! Continuing with default encoder pvt_v2_b2.')
+            print('error')
             
         self.decoder = DFSD(channels=channels,num_classes=num_classes,scan_mode=self.scan_mode,k_group=self.k_group)
         
@@ -78,10 +78,4 @@ class VMDFSD(nn.Module):
                
 
         
-if __name__ == '__main__':
-    model = vmdfsd().cuda()
-    input_tensor = torch.randn(1, 1, 224, 224).cuda()
-
-
-    print(model(input_tensor).shape)
 
