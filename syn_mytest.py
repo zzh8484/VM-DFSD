@@ -122,7 +122,7 @@ def test(name=None,model=None,results_dir=None):
         performance, class_metric = inference(model, testloader,only_dice=True)
 
         performance_logger.info(f"Model: {filename}")
-        performance_logger.info(f"Overall Dice: {performance*100:.2f}")
+        performance_logger.info(f"Overall Dice: {performance[0]*100:.2f}")
 
         
         if performance[0] > best_dice:
@@ -145,5 +145,5 @@ if __name__ == "__main__":
  
 
     from build_model import build_model
-    model=build_model(model='base',num_classes=9,scan_mode=3,k_group=8)
-    test(model=model,name='our_base',results_dir='results/syn')
+    model=build_model(model='base_1-82',num_classes=9,scan_mode=3,k_group=8)
+    test(model=model,name='our_base_1-82',results_dir='results/syn')

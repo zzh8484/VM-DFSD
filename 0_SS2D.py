@@ -110,7 +110,7 @@ def diagonal_gather_main(tensor):
 
     row = torch.arange(H, device=device).unsqueeze(1).expand(H, W)  # [H, W]
     col = torch.arange(W, device=device).unsqueeze(0).expand(H, W)  # [H, W]
-    diag_id = (col - row + (H - 1))  # 所属对角线编号（↘方向）
+    diag_id = (col - row + (H - 1))  
 
     flat_idx = diag_id.flatten()
     sort_order = flat_idx.argsort() 
@@ -126,7 +126,7 @@ def diagonal_scatter_anti(tensor_flat, original_shape):
     row = torch.arange(H, device=device).unsqueeze(1).expand(H, W)
     col = torch.arange(W, device=device).unsqueeze(0).expand(H, W)
     diag_id = (row + col).flatten()
-    sort_order = diag_id.argsort()  # ↙方向拉直后的排序顺序
+    sort_order = diag_id.argsort()  
 
     inverse_order = sort_order.argsort()
 
