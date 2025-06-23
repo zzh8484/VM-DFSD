@@ -56,9 +56,8 @@ class VMDFSD(nn.Module):
         else:
             print('Encoder not implemented! Continuing with default encoder pvt_v2_b2.')
             
-        # self.decoder = DFSD(channels=channels,num_classes=num_classes,scan_mode=self.scan_mode,k_group=self.k_group)
+        self.decoder = DFSD(channels=channels,num_classes=num_classes,scan_mode=self.scan_mode,k_group=self.k_group)
         
-        self.decoder = DFSD(channels=channels,num_classes=num_classes)
         print('Model %s created, param count: %f' %
                      ('decoder: ', sum([m.numel() for m in self.decoder.parameters()])/1e6))
 
