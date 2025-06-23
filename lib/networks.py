@@ -60,7 +60,7 @@ class VMDFSD(nn.Module):
         
         self.decoder = DFSD(channels=channels,num_classes=num_classes)
         print('Model %s created, param count: %f' %
-                     ('EMCAD decoder: ', sum([m.numel() for m in self.decoder.parameters()])/1e6))
+                     ('decoder: ', sum([m.numel() for m in self.decoder.parameters()])/1e6))
 
         
     def forward(self, x, mode='test'):
